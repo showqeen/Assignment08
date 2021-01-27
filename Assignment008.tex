@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings}
+%\usepackage{tkz-euclide}% this needed for markings on trianlges with red markings
+\usetikzlibrary{shapes,shapes.multipart}
+\thispagestyle{empty}
+\begin{document}
+\title{Assignment 8}
+\author{Showqeen Yousuf}
+\date{\today}
+\maketitle
+
+\begin{itemize}
+\item{\textbf{Question 2.15:}}\\
+
+Construct a triangle DEF such that $ DE=5, DF=3, {\angle}D=90^{\circ}$.\\
+
+\item{\textbf{Solution:}}\\
+$
+
+Given, DE=5, DF=3, {\angle}D=90^{\circ}$.\\
+
+Now,\\
+
+Steps of Construction.\\
+$
+
+1: Draw a line segment DE=5 cm.\\
+
+2: Starting from point D, draw another line segment DF=3 cm such that {\angle}EDF=90^{\circ}.\\
+
+3: Join EF and we'll get the required rt {\angle}ed triangle.\\ 
+$
+\begin{center}
+\begin{tikzpicture}
+\path (0,0)coordinate(D) -- (5,0)coordinate(E) -- (0,3)coordinate(F);
+\draw (D) -- (E) -- (F) -- cycle;
+\node at (-0.3,-0.3){$D$};
+\node at (5.3,-0.3){$E$};
+\node at (0,3.3){$F$};
+\end{tikzpicture}
+\end{center}\\
+
+\newpage
+\item{\textbf{Question 2.16:}\\
+
+Construct an isosceles triangle in which the length of the equal sides is 6.5 and the angle between them is 110^{\circ}.\\
+
+\item{\textbf{Solution:}\\
+
+Given, length of equal sides 6.5, and angle between them is 110^{\circ}.\\
+
+Now,\\
+
+Steps of Construction.\\
+$
+
+1: Draw a line segment AB=6.5 cm.\\
+
+2: Starting from point B, draw another line BC=6.5 cm such that  {\angle}ABC=110^{\circ}.\\
+
+3: Join AC and we get required isosceles triangle.\\
+$
+\begin{center}
+\begin{tikzpicture}
+\path (0,0)coordinate(A) -- (6.5,0)coordinate(B) -- (-2.223,6.108)coordinate(C);
+\draw (A) -- (B) -- (C) -- cycle;
+\node at (-0.3,-0.3){$A$};
+\node at (6.8,-0.3){$B$};
+\node at (-2.3,6.3){$C$};
+\end{tikzpicture}
+\end{center}\\
+
+
+\end{itemize}
+\end{document}
